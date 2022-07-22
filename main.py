@@ -22,11 +22,12 @@ def calculate_weights(words):
             else:
                 characters[c] = 1
 
+    total_characters = sum(characters.values())
+    highest_char_count = max(characters.values())
+    highest_weight = highest_char_count/total_characters;
+
     weights = {
-        c[0]: weight
-        for c, weight in zip(
-            sorted(characters.items(), key=lambda item: item[1]), range(0, 26)
-        )
+        c[0]: (c[1]/total_characters) / highest_weight for c in characters.items()
     }
     return weights
 
@@ -40,7 +41,7 @@ def calculate_word_weight(word, weights):
     freq = Counter(word)
     offset = 0
     for key, value in freq.items():
-        offset += value * 15 - 15
+        offset += value * weights[key] - weights[key]
     weight -= offset
 
     return weight
