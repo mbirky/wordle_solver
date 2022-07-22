@@ -41,7 +41,8 @@ def calculate_word_weight(word, weights):
     freq = Counter(word)
     offset = 0
     for key, value in freq.items():
-        offset += value * weights[key] - weights[key]
+        half_weight = weights[key]/2
+        offset += value * half_weight - half_weight
     weight -= offset
 
     return weight
