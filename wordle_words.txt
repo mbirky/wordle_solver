@@ -4337,7 +4337,6 @@ echos
 ecize
 eclat
 ecoid
-ecole
 ecrus
 ectad
 ectal
@@ -7061,7 +7060,6 @@ yoker
 yokes
 yolky
 yolks
-yomer
 yomim
 yomin
 yomud
@@ -7691,7 +7689,6 @@ kilts
 kimbo
 kimmo
 kinah
-kinch
 kinds
 kines
 kings
@@ -9659,7 +9656,6 @@ nikko
 nikon
 nills
 nylon
-nilot
 nimbi
 nymil
 nymph
@@ -14746,7 +14742,6 @@ unbar
 unbed
 unbet
 unbid
-unbit
 unbog
 unboy
 unbow
@@ -14793,7 +14788,6 @@ unhat
 unhex
 unhid
 unhip
-unhit
 unhot
 uniat
 unice

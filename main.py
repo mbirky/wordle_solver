@@ -74,6 +74,8 @@ def get_next_guess(
 
     possible_words = []
     for word in words:
+        # TODO: Add check for not multiples
+        # TODO: Improve to account for duplicate letters
         possible_word = set(letters_in_word).issubset(word)
         for pos, c in enumerate(current_word):
             if c != "*" and c != word[pos]:
